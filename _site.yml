@@ -6,7 +6,11 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "About"
-      href: about.html
+      href: who.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Learning Resources"
+      href: resources.html
 output:
   html_document:
     theme: darkly

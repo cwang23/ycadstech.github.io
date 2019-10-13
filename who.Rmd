@@ -1,0 +1,10 @@
+---
+title: "About"
+output: html_document
+---
+
+Clara Wang
+Max Rowe
+Bailey Marshek
+Shaun Ee
+Shruti Jargad
