@@ -7,6 +7,4 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
-output:
-  html_document:
-    theme: midnight
+
