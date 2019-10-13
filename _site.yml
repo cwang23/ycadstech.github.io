@@ -1,8 +1,12 @@
-name: "my-website"
+name: "yca_dstech_website"
+output_dir: "."
 navbar:
   title: "YCA Data Science & Technology"
   left:
     - text: "Home"
-    href: index.html
+      href: index.html
     - text: "About"
-    href: about.html
+      href: about.html
+output:
+  html_document:
+    theme: paper
