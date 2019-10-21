@@ -1,6 +1,15 @@
 ---
-title: "Home"
+title: "Yenching Data Science & Technology Club Website"
 ---
 
-Hello, Website!
+*made with R and RMarkdown*
+
+## Welcome to the website for the Yenching Academy's DS & Tech club! 
+
+Here, you can find resources for learning, as well as projects that club members are working on.
+
+
+<img src="images/data_meme.jpg" style="width:50%; margin-right: 50px" align="center">
+
+
 
