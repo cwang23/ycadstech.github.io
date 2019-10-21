@@ -1,11 +1,46 @@
 ---
-title: "Resources"
+title: "Learning Resources"
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
+## R
 
-# R
+* **["R for Data Science"](https://r4ds.had.co.nz/)**
+  * A resource for beginners who are interested in learning both the basics of R and data science.
+* **["Advanced R"](http://adv-r.had.co.nz/Introduction.html)**
+  * A resource for more advanced R users who are interested in learning more in-depth knowledge about how the R programming language works.
+* **["The tidyverse style guide"](https://style.tidyverse.org/)**
+  * A style guide for writing R code (requires a VPN to access in mainland China)
+* **["Tidyverse"](https://www.tidyverse.org/)**
+  * Website with resources for using the tidyverse, one of the most popular collections of R packages  
 
-# Python
 
-# SQL
+## Python
+
+* **["Dartmouth College CS 1 Curriculum"](https://www.cs.dartmouth.edu/~cs1/)**
+  * Website for Dartmouth College's Computer Science 1 course
+
+
+## SQL
+
 * **["SQL Murder Mystery"](http://mystery.knightlab.com/)**
+  * An interactive website for learning SQL
+
+
+## Git and GitHub
+
+* **["Resources to learn Git"](https://try.github.io/)**
+  * Resources compiled by GitHub for learning Git
+* **["GitHub Learning Lab"](https://lab.github.com/)**
+  * Interactive tool from GitHub for learning Git
+
+
+## Machine Learning
+
+* **["The Elements of Statistical Learning"](https://web.stanford.edu/~hastie/ElemStatLearn/)**
+  * A free online textbook for statistical learning
+  
+  

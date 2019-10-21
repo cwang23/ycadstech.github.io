@@ -4,8 +4,9 @@ title: "Yenching Data Science & Technology Club Website"
 
 *made with R and RMarkdown*
 
-## Welcome to the website for the Yenching Academy's DS & Tech club! 
-
+<br>
+Welcome to the website for the Yenching Academy's DS & Tech club!
+<br><br>
 Here, you can find resources for learning, as well as projects that club members are working on.
 
 

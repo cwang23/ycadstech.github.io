@@ -1,0 +1,188 @@
+---
+title: "data_resources"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+*Data sources below compiled by Suzanna Linn and Boyoon Lee and accessed via the POLMETH listserv*
+
+
+## General Data Sources
+
+* **[Harvard Dataverse](https://dataverse.harvard.edu)**
+* **[ICPSR](https://www.icpsr.umich.edu)**
+
+
+## Comparative Politics/International Relations
+
+### General Public Opinion Around the World
+
+* **[World Values Survey](http://www.worldvaluessurvey.org/wvs.jsp)**
+  * Nationally representative surveys conducted in almost 100 countries
+* **[European Values Survey](https://zacat.gesis.org/webview/index.jsp?object=http://zacat.gesis.org/obj/fCatalog/Catalog5)**
+  * A large-scale, cross-national, and longitudinal survey research program on how Europeans think about family, work, religion, politics and society
+* **[International Social Survey Program (ISSP)](http://www.issp.org/menu-top/home/)**
+  * International data on common survey instrument each year with an additional module on different topics
+* **[Eurobarometer](http://ec.europa.eu/public_opinion/index_en.htm)**
+  * Surveys on European attitudes toward various topics
+* **[Latinobarometer](http://www.latinobarometro.org/lat.jsp)**
+  * Surveys on Latin American attitudes toward various topics
+* **[Asianbarometer](http://asianbarometer.org/)**
+  * Surveys on Asian attitudes toward various topics; You will need to apply for access to most of the data
+* **[Afrobarometer]( http://afrobarometer.org/)**
+  * Surveys on African attitudes toward various topics
+* **[Arabbarometer](https://www.arabbarometer.org/)**
+  * Surveys on Arabic attitudes toward various topics
+* **[IPUMS-International](https://international.ipums.org/international/index.shtml)**
+  * Provides micro-level data (individual persons and households) on 98 countries using 443 censuses and surveys
+* **[Latin American Public Opinion Project (LAPOP)](https://www.vanderbilt.edu/lapop/)**
+  * Surveys on Latin American attitudes from 2004 to 2016/17
+* **[PIPA-polls on foreign policy](https://www.thechicagocouncil.org/)**
+  * Surveys on the global economy, food & agriculture, security, etc
+
+
+### Parliament, Governments, and the Electoral System
+
+    • Parlgov
+        ◦ http://www.parlgov.org/
+        ◦ Parties, Elections, and Cabinet data for all EU and most OECD democracies (37 countries)
+    • Who Governs EU
+        ◦ https://whogoverns.eu/about/
+        ◦ Cabinet composition and party system development in 48 European democratic states
+    • Party Government Data Set (PGDS)
+        ◦ https://fsw.vu.nl/en/departments/political-science-and-public-administration/staff/woldendorp/party-government-data-set/index.aspx
+        ◦ Covers 39 parliamentary democracies from 1945, or the year these countries became a parliamentary democracy (again)., through 2008
+    • Comparative Studies of Electoral Systems (CSES)
+        ◦ https://cses.org
+        ◦ The impact of electoral institutions on political behavior, representation and accountability, variety and quality of political choice in an election, distributional politics and social protection, and citizen’s perception on political elites and out-groups
+    • Comparative Political Data Set (CPDS)
+        ◦ http://www.cpds-data.org/index.php/data
+        ◦ A collection of political and institutional country-level data
+    • Veto Player Data
+        ◦ https://sites.lsa.umich.edu/tsebelis/data/veto-players-data/
+        ◦ Data about the composition of governments of different advanced industrialized countries
+    • Domestic Electoral Systems Around the World
+        ◦ http://mattgolder.com/elections
+        ◦ Data on electoral systems that cover all of the legislative and presidential elections that have taken place in democratic states from 1946 through 2016
+
+
+## US Data
+
+### Elections Data
+
+* **[The American National Elections Studies (ANES)](http://www.electionstudies.org/)**
+  * Surveys on voting, public opinion, and political participation in the U.S since 1948
+* **[CCES (Cooperative Congressional Election Study)](https://cces.gov.harvard.edu/pages/welcome-cooperative-congressional-election-study)**
+  * Survey administered by YouGov, consists of (1) pre-election wave which asks about general political attitudes, various demographic factors, assessment of roll call voting choices, political information, and vote intentions and (2) post-election wave which asks questions about the election just occurred
+* **[NAES (National Annenberg Election Survey)](https://www.annenbergpublicpolicycenter.org/political-communication/naes/)**
+  * Surveys on political attitudes about candidates, issues and the traits Americans want in a president during the presidential election years 2000, 2004, and 2008 in the U.S.
+* **[Penn State Library - Voting and Election](https://guides.libraries.psu.edu/voting-elections)**
+  * A guide to resources for voting and elections research. Penn State verification required
+* **[CQ Voting and Elections Collection](https://library-cqpress-com.ezaccess.libraries.psu.edu/elections/)**
+  * Provides reference narratives and documents on elections, parties, voter behavior, and campaigns. Also allows extracting election results by meaningful characteristics: candidate, office, locality, and race type over time
+* **[Polling the Nations](http://poll.orspub.com.ezaccess.libraries.psu.edu/)**
+  * Provides statistics (frequencies rates) from questions in public opinion polls from the United States and 100 countries since 1986
+* **[The American Presidency Project](https://www.presidency.ucsb.edu/statistics)**
+  * Data on the American presidency including presidential relations with congress, presidential approval, public appearances, growth of the executive branch, presidential addresses, and presidential selection
+* **[Polling report](http://www.pollingreport.com/)**
+  * American public opinion on various issues including elections
+  
+  
+### US Congress
+
+* **[Charles Stewart’s Congressional Data](http://web.mit.edu/17.251/www/data_page.html)**
+  * Provides links to the data on the study of Congress, including Congressional Committees (by Garrison Nelson), Candidate Qualities (by David Lublin), Candidate Positioning (by Stephen Ansolabehere, James M. Snyder, and CharlesStewart III), etc.
+* **[Congressional Bill Project](http://congressionalbills.org/download.html)**
+  ** A relational database of over 400,000 public and private bills introduced in the U.S. House and Senate since 1947. It provides information about a bill’s title or short description, primary topic, progress, and sponsor.
+* **[DW-Nominate and Roll Call Data](https://www.voteview.com/)**
+  * Keith Poole’s site containing congressional roll calls, as well as ideology estimates of members of congress
+* **[CQ Congress Collections](https://library-cqpress-com.ezaccess.libraries.psu.edu/congress/)**
+  * Data on legislation, members, and the history and powers of the U.S. Congress
+* **[Ranked Choice Voting Resource Center RCV Data](https://www.rankedchoicevoting.org/data_clearinghouse)**
+  * Databases of ranked-choice voting ballot data from every RCV election held in the United States with publicly available data since the early 2000s and links to tabulation tools developed to run variations of ranked-choice voting
+* **[Database on Ideology, Money in Politics, and Elections (DIME)](https://data.stanford.edu/dime)**
+  * A general resource for the study of campaign finance and ideology in American politics. Provides data on contribution records, candidate characteristics, and election outcomes from various sources
+* **[Washington Representatives Directory Study](https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/35309)**
+  * Includes information about thousands of organizations involved in Washington D.C. politics, their organizational characteristics including the kinds of interests they represented and the nature of their membership
+  
+  
+### US State Politics and Public Policy
+
+* **[Correlates of State Policy Dataset](http://ippsr.msu.edu/public-policy/correlates-state-policy)**
+  * Collects the data relevant to U.S. state policy research, tracking policy differences across and change over time in the 50 states
+* **[Carl Klarner’s State Politics Data](https://www.klarnerpolitics.org/datasets-1)**
+  * Provides a collection of data on state legislative election returns, state economic data, information about the partisan composition of state legislators, and data on governors
+
+
+### US Courts
+
+* **[The U.S. Supreme Court Database](http://scdb.wustl.edu/)**
+  * Contains over two hundred pieces of information about each case decided by the Court between the 1791 and 2018 terms
+* **[Judicial Research Initiative](http://artsandsciences.sc.edu/poli/juri/)**
+  A repository for data on judicial politics. It includes databases on decisions of the U.S. Courts of Appeals, as well as a database of decisions made by high courts in other countries
+* **[Comparative Constitutions Project](http://comparativeconstitutionsproject.org/)**
+  * Contains data on formal features of national constitutions since 1789, including thousands of constitutional texts
+  
+  
+### General Public Opinion in the US
+
+* **[Pew](http://www.pewresearch.org/data/)**
+  * Surveys on public opinion towards various topics ranging from American Politics to Global Attitudes & Trends.
+* **[General Social Survey](http://gss.norc.org/Get-The-Data)**
+  * Surveys on American behaviors, demographics, and opinions. Topics include Gender & Marriage, Civil Liberties, Political beliefs and voting, Quality of working life, Religion & Spirituality, and Current Affairs
+* **[Roper Center](https://ropercenter.cornell.edu//)**
+  * Surveys on public opinion towards various topics such as Abortion, Cold War, Congressional Elections, Defense Spending, Guns, Health, Immigration, etc. Roper iPoll requires a subscription (PSU has one and you may need to be on campus to access it)
+  
+  
+### US News Polls
+
+* **[ABC News](http://abcnews.go.com/sections/us/PollVault/PollVault.html)**
+* **[CBS News](http://www.cbsnews.com/sections/opinion/polls/main500160.shtml)**
+* **[Los Angeles Times](http://www.latimes.com/news/custom/timespoll/)**
+
+
+### US Demographic/Compendium Data
+
+* **[Penn State Library - Labor Statistics](https://guides.libraries.psu.edu/labor_statistics)**
+  * A guide to help researchers find numbers and data related to topics in labor studies. Penn State verification required
+* **[IPUMS-USA](https://usa.ipums.org/usa/)**
+  * U.S. census microdata; Data includes decennial censuses from 1790 to 2010 and American Community Surveys (ACS) from 2000 to the present
+* **[IPUMS-Health](https://healthsurveys.ipums.org/)**
+  * Individual-level survey data from two leading sources of self-reported health and health care access information: the National Health Interview Survey (NHIS) and the Medical Expenditure Panel Survey (MEPS)
+* **[IPUMS-Highered](https://highered.ipums.org/highered/)**
+  * Surveys on the science and engineering (STEM) workforce in the United States
+* **[Statistical Abstract of the United States](https://statabs-proquest-com.ezaccess.libraries.psu.edu/sa/index.html)**
+  * Key statistics for the U.S. across a broad array of subject
+* **[Historical Statistics of the United States](https://hsus-cambridge-org.ezaccess.libraries.psu.edu/HSUSWeb/HSUSEntryServlet)**
+  * Various spect of the history of the United States from demographics to voting patterns
+* **[Vital Statistics on American Politics](http://sk.sagepub.com.ezaccess.libraries.psu.edu/Search/SavedSearch/280)**
+  * Tables on various subjects such as US elections and political parties, public opinion and voting, the media, the three branches of U.S. government, foreign, military, social and economic policy
+* **[American FactFinder](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml)**
+  * Social and Demographic statistics taken from Census Bureau surveys
+* **[Kaiser Family Foundation - polls on public health and health](https://www.kff.org/polling/)**
+  * Surveys on the public’s opinions, knowledge, and experiences with the health care system
+  
+  
+### US Government Data
+
+* **[The U.S. Government’s open data](https://www.data.gov/)**
+  * Various topics such as Agriculture, Climate, Consumer, Finance, Health, Local Government, Public Safety, etc.
+* **[Federal Portal to U.S. Data and Statistics](https://www.usa.gov/statistics)**
+  * Provides Data and Statistics from the U.S. Government
+* **[Census Bureau website](https://www.census.gov/)**
+* **[CDC/US National Health and Nutrition Examination Study](https://wwwn.cdc.gov/nchs/nhanes/Search/default.aspx)**
+  * Surveys on Health and Nutrition
+  
+  
+### Other Data from US Sources
+
+* **[FiveThirtyEight](https://data.fivethirtyeight.com/)**
+  * Various topics from political issues (polls, endorsement, candidate emails, etc) to sports (NFL, MLB, NBA predictions)
+* **[NBA Player tracking data](https://github.com/dblackrun)**
+  * [Another resource](http://rstudio-pubs-static.s3.amazonaws.com/11288_111663babc4f44359a35b1f5f1a22b89.html)
+* **[Baseball Statistics (MLB)](https://blog.revolutionanalytics.com/2013/04/lahman-a-new-r-package-for-baseball-stats.html)**
+
+
+
