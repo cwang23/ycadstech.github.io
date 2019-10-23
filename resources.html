@@ -12,7 +12,7 @@
 
 
 
-<title>Resources</title>
+<title>Learning Resources</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -248,6 +251,63 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -255,6 +315,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -281,6 +351,9 @@ $(document).ready(function () {
   <a href="projects.html">Projects</a>
 </li>
 <li>
+  <a href="data_resources.html">Data Resources</a>
+</li>
+<li>
   <a href="resources.html">Learning Resources</a>
 </li>
       </ul>
@@ -295,13 +368,13 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Resources</h1>
+<h1 class="title toc-ignore">Learning Resources</h1>
 
 </div>
 
 
-<div id="r" class="section level1">
-<h1>R</h1>
+<div id="r" class="section level2">
+<h2>R</h2>
 <ul>
 <li><strong><a href="https://r4ds.had.co.nz/">“R for Data Science”</a></strong>
 <ul>
@@ -313,22 +386,59 @@ $(document).ready(function () {
 </ul></li>
 <li><strong><a href="https://style.tidyverse.org/">“The tidyverse style guide”</a></strong>
 <ul>
-<li>A style guide for writing R code</li>
+<li>A style guide for writing R code (requires a VPN to access in mainland China)</li>
+</ul></li>
+<li><strong><a href="https://www.tidyverse.org/">“Tidyverse”</a></strong>
+<ul>
+<li>Website with resources for using the tidyverse, one of the most popular collections of R packages</li>
 </ul></li>
 </ul>
 </div>
-<div id="python" class="section level1">
-<h1>Python</h1>
-</div>
-<div id="sql" class="section level1">
-<h1>SQL</h1>
+<div id="python" class="section level2">
+<h2>Python</h2>
 <ul>
-<li><strong><a href="http://mystery.knightlab.com/">“SQL Murder Mystery”</a></strong></li>
+<li><strong><a href="https://www.cs.dartmouth.edu/~cs1/">“Dartmouth College CS 1 Curriculum”</a></strong>
+<ul>
+<li>Website for Dartmouth College’s Computer Science 1 course</li>
+</ul></li>
+</ul>
+</div>
+<div id="sql" class="section level2">
+<h2>SQL</h2>
+<ul>
+<li><strong><a href="http://mystery.knightlab.com/">“SQL Murder Mystery”</a></strong>
+<ul>
+<li>An interactive website for learning SQL</li>
+</ul></li>
+</ul>
+</div>
+<div id="git-and-github" class="section level2">
+<h2>Git and GitHub</h2>
+<ul>
+<li><strong><a href="https://try.github.io/">“Resources to learn Git”</a></strong>
+<ul>
+<li>Resources compiled by GitHub for learning Git</li>
+</ul></li>
+<li><strong><a href="https://lab.github.com/">“GitHub Learning Lab”</a></strong>
+<ul>
+<li>Interactive tool from GitHub for learning Git</li>
+</ul></li>
+</ul>
+</div>
+<div id="machine-learning" class="section level2">
+<h2>Machine Learning</h2>
+<ul>
+<li><strong><a href="https://web.stanford.edu/~hastie/ElemStatLearn/">“The Elements of Statistical Learning”</a></strong>
+<ul>
+<li>A free online textbook for statistical learning</li>
+</ul></li>
 </ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -361,6 +471,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

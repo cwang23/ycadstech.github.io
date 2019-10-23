@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>data_resources</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">YCA Data Science & Technology</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="who.html">About</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+<li>
+  <a href="data_resources.html">Data Resources</a>
+</li>
+<li>
+  <a href="resources.html">Learning Resources</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">data_resources</h1>
+
+</div>
+
+
+<p><em>Data sources below compiled by Suzanna Linn and Boyoon Lee and accessed via the POLMETH listserv</em></p>
+<p><br></p>
+<div id="general-data-sources" class="section level2">
+<h2>General Data Sources</h2>
+<ul>
+<li><strong><a href="https://dataverse.harvard.edu">Harvard Dataverse</a></strong></li>
+<li><strong><a href="https://www.icpsr.umich.edu">ICPSR</a></strong></li>
+<li><strong><a href="https://toolbox.google.com/datasetsearch">Google Dataset Search</a></strong></li>
+</ul>
+<p><br><br></p>
+</div>
+<div id="various-political-science-datasets" class="section level2">
+<h2>Various Political Science Datasets</h2>
+<ul>
+<li><strong><a href="https://www.paulhensel.org/data.html">Paul Hensel’s International Relations Data Site</a></strong>
+<ul>
+<li>Data sets on international conflict, economy, environment, politics, and social subjects</li>
+</ul></li>
+<li><strong><a href="https://github.com/erikgahner/PolData">Eric Gahner Larsen’s “Dataset with Political Datasets” page</a></strong>
+<ul>
+<li>Provides an overall collection of political datasets within specific categories: cabinets, citizens, constitutions, political institutions, parties and politicians, democracy, economics, elections, international relations, media, policy, political elites</li>
+</ul></li>
+<li><strong><a href="http://www.poliscidata.com/">Poli Sci Data</a></strong></li>
+<li><strong><a href="https://laurenkperez.com/database-of-databases-1">Database of Database</a></strong>
+<ul>
+<li>Sources that be useful for research in the social sciences, broadly conceived</li>
+</ul></li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0">Data is Plural</a></strong></li>
+<li><strong><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ARKOTI">Jamie Monogan Dataverse</a></strong></li>
+<li>Data on both U.S. (roll calls, NES, Drug Policy News Coverage, Energy Policy News Coverage, Health Lobbying, National Supported Work Demonstration, National Survey of High School Biology Teachers) and International (Comparative Study of Electoral Systems, Democratization and Border Settlements, Japanese Electrical Consumption, Militarized International Disputes, Political Terror Scale on Human Rights)</li>
+<li><strong><a href="https://ghum.kuleuven.be/ggs/research/HerculesDB">Hercules Interdisciplinary Database</a></strong>
+<ul>
+<li>Contains information from different disciplines, including economics, law, and political sciences</li>
+</ul></li>
+<li><strong><a href="https://bkmrk.michelledion.com/">Michelle Dion’s research bookmarks</a></strong>
+<ul>
+<li>Contains links to over 600 data sources</li>
+</ul></li>
+</ul>
+</div>
+<div id="comparative-politicsinternational-relations" class="section level2">
+<h2>Comparative Politics/International Relations</h2>
+<div id="general-public-opinion-around-the-world" class="section level3">
+<h3>General Public Opinion Around the World</h3>
+<ul>
+<li><strong><a href="http://www.worldvaluessurvey.org/wvs.jsp">World Values Survey</a></strong>
+<ul>
+<li>Nationally representative surveys conducted in almost 100 countries</li>
+</ul></li>
+<li><strong><a href="https://zacat.gesis.org/webview/index.jsp?object=http://zacat.gesis.org/obj/fCatalog/Catalog5">European Values Survey</a></strong>
+<ul>
+<li>A large-scale, cross-national, and longitudinal survey research program on how Europeans think about family, work, religion, politics and society</li>
+</ul></li>
+<li><strong><a href="http://www.issp.org/menu-top/home/">International Social Survey Program (ISSP)</a></strong>
+<ul>
+<li>International data on common survey instrument each year with an additional module on different topics</li>
+</ul></li>
+<li><strong><a href="http://ec.europa.eu/public_opinion/index_en.htm">Eurobarometer</a></strong>
+<ul>
+<li>Surveys on European attitudes toward various topics</li>
+</ul></li>
+<li><strong><a href="http://www.latinobarometro.org/lat.jsp">Latinobarometer</a></strong>
+<ul>
+<li>Surveys on Latin American attitudes toward various topics</li>
+</ul></li>
+<li><strong><a href="http://asianbarometer.org/">Asianbarometer</a></strong>
+<ul>
+<li>Surveys on Asian attitudes toward various topics; You will need to apply for access to most of the data</li>
+</ul></li>
+<li><strong><a href="http://afrobarometer.org/">Afrobarometer</a></strong>
+<ul>
+<li>Surveys on African attitudes toward various topics</li>
+</ul></li>
+<li><strong><a href="https://www.arabbarometer.org/">Arabbarometer</a></strong>
+<ul>
+<li>Surveys on Arabic attitudes toward various topics</li>
+</ul></li>
+<li><strong><a href="https://international.ipums.org/international/index.shtml">IPUMS-International</a></strong>
+<ul>
+<li>Provides micro-level data (individual persons and households) on 98 countries using 443 censuses and surveys</li>
+</ul></li>
+<li><strong><a href="https://www.vanderbilt.edu/lapop/">Latin American Public Opinion Project (LAPOP)</a></strong>
+<ul>
+<li>Surveys on Latin American attitudes from 2004 to 2016/17</li>
+</ul></li>
+<li><strong><a href="https://www.thechicagocouncil.org/">PIPA-polls on foreign policy</a></strong>
+<ul>
+<li>Surveys on the global economy, food &amp; agriculture, security, etc</li>
+</ul></li>
+</ul>
+</div>
+<div id="parliament-governments-and-the-electoral-system" class="section level3">
+<h3>Parliament, Governments, and the Electoral System</h3>
+<ul>
+<li><strong><a href="http://www.parlgov.org/">Parlgov</a></strong>
+<ul>
+<li>Parties, Elections, and Cabinet data for all EU and most OECD democracies (37 countries)</li>
+</ul></li>
+<li><strong><a href="https://whogoverns.eu/about/">Who Governs EU</a></strong>
+<ul>
+<li>Cabinet composition and party system development in 48 European democratic states</li>
+</ul></li>
+<li><strong><a href="https://fsw.vu.nl/en/departments/political-science-and-public-administration/staff/woldendorp/party-government-data-set/index.aspx">Party Government Data Set (PGDS)</a></strong>
+<ul>
+<li>Covers 39 parliamentary democracies from 1945, or the year these countries became a parliamentary democracy (again)., through 2008</li>
+</ul></li>
+<li><strong><a href="https://cses.org">Comparative Studies of Electoral Systems (CSES)</a></strong>
+<ul>
+<li>The impact of electoral institutions on political behavior, representation and accountability, variety and quality of political choice in an election, distributional politics and social protection, and citizen’s perception on political elites and out-groups</li>
+</ul></li>
+<li><strong><a href="http://www.cpds-data.org/index.php/data">Comparative Political Data Set (CPDS)</a></strong>
+<ul>
+<li>A collection of political and institutional country-level data</li>
+</ul></li>
+<li><strong><a href="https://sites.lsa.umich.edu/tsebelis/data/veto-players-data/">Veto Player Data</a></strong>
+<ul>
+<li>Data about the composition of governments of different advanced industrialized countries</li>
+</ul></li>
+<li><strong><a href="http://mattgolder.com/elections">Domestic Electoral Systems Around the World</a></strong>
+<ul>
+<li>Data on electoral systems that cover all of the legislative and presidential elections that have taken place in democratic states from 1946 through 2016</li>
+</ul></li>
+</ul>
+</div>
+<div id="elections-party-and-policy" class="section level3">
+<h3>Elections, Party, and Policy</h3>
+<ul>
+<li><strong><a href="http://www.electiondataarchive.org/data-and-documentation.php">Constituency-Level Elections Archive (CLEA)</a></strong>
+<ul>
+<li>Includes around 1,900 elections from 168 countries and territories</li>
+</ul></li>
+<li><strong><a href="http://www.nsd.uib.no/european_election_database/">European Elections Database (EED)</a></strong>
+<ul>
+<li>Publishes regional election results for 35 European countries since 1990</li>
+</ul></li>
+<li><strong><a href="https://nelda.co/">National Elections Across Democracy and Autocracy (NELDA)</a></strong>
+<ul>
+<li>Provides detailed information on all election events from 1945-2012</li>
+</ul></li>
+<li><strong><a href="https://www.comparativeagendas.net">Comparative Agenda Project</a></strong>
+<ul>
+<li>Collects and organizes data from archived sources to track policy outcomes across countries</li>
+</ul></li>
+<li><strong><a href="https://manifesto-project.wzb.eu/">Manifesto Project</a></strong>
+<ul>
+<li>Provides parties’ policy positions derived from a content analysis of parties’ electoral manifestos</li>
+</ul></li>
+<li><strong><a href="https://partyfacts.herokuapp.com/">Party Facts</a></strong>
+<ul>
+<li>Datasets on political parties and provides an online platform about parties and their history as recorded in social science datasets</li>
+</ul></li>
+<li><strong><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PE8TWP">Integrated Party Organization Dataset (IPOD)</a></strong>
+<ul>
+<li>This dataset combines several existing datasets containing data on party organization, party performance, party positions and electoral systems into a single data source</li>
+</ul></li>
+<li><strong><a href="http://www.polidoc.net/">The Political Documents Archive (PoliDoc)</a></strong>
+<ul>
+<li>Contains election manifestos, coalition agreements, government declarations and various other documents of political actors from developed democracies</li>
+</ul></li>
+<li><strong><a href="https://www.comparativeagendas.net">Policy Agendas Project</a></strong>
+<ul>
+<li>Collects and organizes data from archived sources to track policy outcomes across countries</li>
+</ul></li>
+<li><strong><a href="http://www.executiveapproval.org/">Executive Approval Project (EAP)</a></strong>
+<ul>
+<li>Measure and analyze public support for political executives</li>
+</ul></li>
+<li><strong><a href="http://glp.la.utexas.edu/about-us">Global Leadership Project (GLP)</a></strong>
+<ul>
+<li>Data on government leaders throughout the world - including legislators, members of the executive branch, members of the judiciary, and other decisionmakers whose power may be formal or informal. Only replication data is available for now</li>
+</ul></li>
+</ul>
+</div>
+<div id="democracy-and-autocracy" class="section level3">
+<h3>Democracy and Autocracy</h3>
+<ul>
+<li><strong><a href="https://freedomhouse.org/content/freedom-world-data-and-resources">Freedom House</a></strong>
+<ul>
+<li>Assessing the condition of political rights and civil liberties around the world. For each country and territory, Freedom in the World analyzes the electoral process, political pluralism and participation, the functioning of the government, freedom of expression and of belief, associational and organizational rights, the rule of law, and personal autonomy and individual rights</li>
+</ul></li>
+<li><strong><a href="https://sites.google.com/site/joseantoniocheibub/datasets/democracy-and-dictatorship-revisited">Democracy and Dictatorship</a></strong>
+<ul>
+<li>Classification of political regimes as democracy and dictatorship. Classification of democracies as parliamentary, semi-presidential (mixed) and presidential. Classification of dictatorships as military, civilian and royal</li>
+</ul></li>
+<li><strong><a href="http://www.systemicpeace.org/polityproject.html">The Polity Project</a></strong>
+<ul>
+<li>Measures qualities of democratic and autocratic authority in governing institutions</li>
+</ul></li>
+<li><strong><a href="https://sites.psu.edu/dictators/">Autocratic Regime Data</a></strong>
+<ul>
+<li>Data set on the regime transition for the 280 autocratic regimes in existence from 1946 to 2010. The data identify how regimes exit power, how much violence occurs during transitions, and whether the regimes that precede and succeed them are autocratic.</li>
+</ul></li>
+<li><strong><a href="https://sites.google.com/site/authoritarianregimedataset/">Authoritarian Regime Dataset</a></strong>
+<ul>
+<li>Dataset on authoritarian regimes in the world between 1972-2014</li>
+</ul></li>
+<li><strong><a href="http://qog.pol.gu.se/data">Quality of Government Data</a></strong>
+<ul>
+<li>Dataset on the causes, consequences, and nature of Good Governance and the Quality of Government (QoG) - that is, trustworthy, reliable, impartial, uncorrupted and competent government institutions</li>
+</ul></li>
+<li><strong><a href="https://www.v-dem.net/en/">Varieties of Democracy (V-Dem)</a></strong>
+<ul>
+<li>This dataset measures electoral, liberal, participatory, deliberative, egalitarian, majoritarian and consensual levels of democracy</li>
+</ul></li>
+<li><strong><a href="https://guides.libraries.emory.edu/main/Data_Services/PRS-Data">Political Risk Service (PRS) Group Data</a></strong>
+<ul>
+<li>Produces various data products that measure the level of “risk” to international business operations present in different countries across the globe</li>
+</ul></li>
+</ul>
+</div>
+<div id="conflict-and-terrorism" class="section level3">
+<h3>Conflict and Terrorism</h3>
+<ul>
+<li><strong><a href="http://www.pcr.uu.se/research/UCDP/">Uppsala Conflict Data</a></strong></li>
+<li><strong><a href="http://www.unc.edu/~bapat/TIES.htm">Threat and imposition of sanctions</a></strong></li>
+<li><strong><a href="http://www.correlatesofwar.org/">Correlates of War (COW)</a></strong></li>
+<li><strong><a href="https://acd-iiss-org.ezaccess.libraries.psu.edu/member/default.aspx">Armed Conflict Database</a></strong>
+<ul>
+<li>Provides timelines and reports on conflicts worldwide. You may need to access through university ID</li>
+</ul></li>
+<li><strong><a href="https://www.acleddata.com/">Armed Conflict Location and Event Data (ACLED)</a></strong>
+<ul>
+<li>Records the dates, actors, types of violence, locations, and fatalities of all reported political violence and protest events across Africa, South Asia, Southeast Asia, the Middle East, Europe, and Latin America</li>
+</ul></li>
+<li><strong><a href="http://www.systemicpeace.org/inscrdata.html">Integrated Network for Societal Conflict Research (INSCR)</a></strong>
+<ul>
+<li>Provides Armed Conflict and Intervention (ACI) Datasets, Polity IV, State Fragility Index and Matrix, and Conflict in India Datasets</li>
+</ul></li>
+<li><strong><a href="https://www.start.umd.edu/gtd/">Global Terrorism Database (GTD)</a></strong>
+<ul>
+<li>Provides information on terrorist events around the world from 1970 through 2017</li>
+</ul></li>
+<li><strong><a href="https://www.start.umd.edu/data-and-tools/start-datasets">National Consortium for the Study of Terrorism and Responses to Terrorism (START)</a></strong>
+<ul>
+<li>Data collections on topics such as individual terrorist events, the organizational behavior of ethnic groups in the Middle East and North Africa, profiles of individual perpetrators of terrorist events in the United States, public opinion in Muslim-majority countries, and profiles of individual terrorist organizations. GTD is a commonly used data source by START.</li>
+</ul></li>
+<li><strong><a href="https://www.prio.org/Data/Armed-Conflict/">UCDP/PRIO Armed Conflict Dataset</a></strong>
+<ul>
+<li>Provides a dataset of armed conflicts, both internal and external, in the period 1946 to the present</li>
+</ul></li>
+<li><strong><a href="https://www.sipri.org/databases">SIPRI dataset</a></strong>
+<ul>
+<li>Dataset on global security, including Arms Transfer, Arms Industry, Military Expenditure, etc.</li>
+</ul></li>
+<li><strong><a href="https://www.gdeltproject.org/">GDELF</a></strong>
+<ul>
+<li>Event data compiled from news reports. Includes protest and terrorism data among other things. Be aware of the size of the dataset; the full download is 100GB</li>
+</ul></li>
+<li><strong><a href="http://eventdata.parusanalytics.com/index.html">Computational Event Data System</a></strong>
+<ul>
+<li>Uses automated coding of English-language news reports to generate political event data focusing on the Middle East, Balkans, and West Africa</li>
+</ul></li>
+<li><strong><a href="http://cross-sub.org/">XSub</a></strong>
+<ul>
+<li>Cross-national data on sub-national violence; provides subnational event data on armed conflict and contention around the world</li>
+</ul></li>
+<li><strong><a href="https://databank.illinois.edu/datasets/IDB-0647142">Cline Center Historical Phoenix Event Data</a></strong>
+<ul>
+<li>Covers the period 1945-2018 and includes several million events extracted from 17.5 million news stories. It documents the agents, locations, and issues at stake in a wide variety of conflict, cooperation, and communicative events</li>
+</ul></li>
+<li><strong><a href="http://www.cidcm.umd.edu/mar/">Minority at Risk (MAR)</a></strong>
+<ul>
+<li>Monitors and analyzes the status and conflicts of politically-active communal groups in all countries with a current population of at least 500,000</li>
+</ul></li>
+</ul>
+</div>
+<div id="migration" class="section level3">
+<h3>Migration</h3>
+<ul>
+<li><strong>US Census Bureau on Foreign Born Population &amp; Migration/Geographic Mobility</strong>
+<ul>
+<li><a href="https://www.census.gov/topics/population/foreign-born.html">Foreign born population</a></li>
+<li><a href="https://www.census.gov/topics/population/migration.html">Migration/Geographic Mobility</a></li>
+</ul></li>
+<li><strong><a href="http://www.dof.ca.gov/Reports/Demographic_Reports/index.html#migration">California Demographic Reports - Immigration and Migration</a></strong>
+<ul>
+<li>Includes data on migration (which describes movements within the same country or state) and immigration (which describes movements between countries)</li>
+</ul></li>
+<li><strong><a href="https://www.migrationpolicy.org/programs/migration-data-hub?qt-data_hub_tabs=1#datahub-tabs">Migration Policy Institute</a></strong>
+<ul>
+<li>Provides international migration statistics and global remittance as well as U.S. immigration statistics (state level) and DACA related data</li>
+</ul></li>
+<li><strong><a href="http://www.impic-project.eu/">The IMPIC Project</a></strong>
+<ul>
+<li>Provides quantitative indices to measure immigration policies in all OECD countries and for the period 1980-2010</li>
+</ul></li>
+<li><strong><a href="https://migrationdataportal.org/?i=stock_abs_&amp;t=2019">Migration Data Portal</a></strong>
+<ul>
+<li>Provides various migration-related topics such as migrant stocks, gender and migration, human trafficking, smuggling, etc</li>
+</ul></li>
+<li><strong><a href="https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues/brief/migration-remittances-data">Migration Remittance data - World Bank</a></strong>
+<ul>
+<li>Provides a snapshot of migration and remittances for all countries, regions and income groups of the world, annual remittances data, bilateral migration matrix, and some downloadable datasets</li>
+</ul></li>
+<li><strong><a href="https://www.oecd-ilibrary.org/social-issues-migration-health/migration/indicator-group/english_443b6567-en">Migration indicators - OECD</a></strong>
+<ul>
+<li>Inflows of foreign population by nationality</li>
+</ul></li>
+<li><strong><a href="https://www150.statcan.gc.ca/n1/en/subjects/immigration_and_ethnocultural_diversity">Immigration and Ethnocultural Diversity in Canada</a></strong></li>
+<li><strong><a href="https://www.dhs.gov/immigration-statistics">Department of Homeland Security on Immigration data &amp; statistics</a></strong>
+<ul>
+<li>Official government data on immigrants &amp; non-immigrants admission, refugees &amp; Asylees, Border security, and etc.</li>
+</ul></li>
+<li><strong><a href="https://data2.unhcr.org/en/situations">UNHCR data on Refugee</a></strong>
+<ul>
+<li>Data on the current emergencies and other protracted refugee crises</li>
+</ul></li>
+<li><strong><a href="https://www.un.org/en/development/desa/population/migration/data/index.asp">UN data on Migration</a></strong>
+<ul>
+<li>Particularly on international migration flow and stock</li>
+</ul></li>
+<li><strong><a href="https://www.wzb.eu/en/node/350/subpage/12393">Citizenship rights of immigrants</a></strong>
+<ul>
+<li>Classifies policies as more or less restrictive in terms of the extent and accessibility of rights for immigrants</li>
+</ul></li>
+</ul>
+</div>
+<div id="trade-and-economy" class="section level3">
+<h3>Trade and Economy</h3>
+<ul>
+<li><strong><a href="http://data.imf.org/">IMF Macroeconomic and Financial Data</a></strong>
+<ul>
+<li>Contains various topics related to economic &amp; financial data such as investment flows, monetary aggregates, economic output, commodity prices, exchange rates, public finances, financial institutions and markets, and both public and private debt</li>
+</ul></li>
+<li><strong><a href="http://www.oecd-ilibrary.org/">OECD iLibrary (Organization for Economic Cooperation and Development)</a></strong>
+<ul>
+<li>Covers topics such as agricultural policies, environmental indicators, social expenditures, labour markets, national accounts, foreign trade and FDI, and various industry-level data</li>
+</ul></li>
+<li><strong><a href="https://comtrade.un.org/">United Nations Commodity Statistics Trade Database (Comtrade)</a></strong>
+<ul>
+<li>Especially useful for commodity-specific bilateral trade data</li>
+</ul></li>
+<li><strong><a href="http://unctadstat.unctad.org/EN/">UNCTADStat</a></strong>
+<ul>
+<li>Useful in investigating FDI statistics, including flows, stocks, and participation in international investment-related agreements</li>
+</ul></li>
+<li><strong><a href="https://datacatalog.worldbank.org/dataset/world-development-indicators">World Development Indicators (World Bank)</a></strong>
+<ul>
+<li>A compilation of relevant, high-quality, and internationally comparable statistics about global development and the fight against poverty.</li>
+</ul></li>
+<li><strong><a href="http://wits.worldbank.org/WITS/">World Integrated Trade Solution (WITS)</a></strong>
+<ul>
+<li>Provides access to international merchandise trade, tariff and non-tariff measures (NTM) data</li>
+</ul></li>
+</ul>
+</div>
+<div id="welfare-statesocial-policies" class="section level3">
+<h3>Welfare State/Social Policies</h3>
+<ul>
+<li><strong><a href="https://www.sofi.su.se/spin/">The Social Policy Indicators (SPIN) database</a></strong>
+<ul>
+<li>Comparative data on social rights and duties of citizens, covering 34 countries, of which several have data on core social policy programs from 1930 to 2013</li>
+</ul></li>
+<li><strong><a href="http://cwed2.org/">The Comparative Welfare Entitlements Dataset (CWED)</a></strong>
+<ul>
+<li>Contains information about the structure and generosity of social insurance benefits in 33 countries around the world</li>
+</ul></li>
+<li><strong><a href="http://www.centrumvoorsociaalbeleid.be/index.php?q=node/3270">The CSB Minimum Income Protection Indicators database</a></strong>
+<ul>
+<li>Data on minimum income protection provisions in Europe and the United States</li>
+</ul></li>
+<li><strong><a href="https://benefitconditionality.weebly.com/">Unemployment Benefit Conditionality Dataset</a></strong>
+<ul>
+<li>Provides information on the strictness of job-availability and job-search requirements as well as benefit sanction rules in 21 advanced democracies in Europe, North America, and Australiasia and their changes between 1980 and 2012</li>
+</ul></li>
+<li><strong><a href="http://huberandstephens.web.unc.edu/common-works/data/">The comparative Welfare States &amp; Social Policy in Latin America Datasets</a></strong></li>
+<li><strong><a href="https://www.oecd.org/social/benefits-and-wages/">OECD Benefits &amp; Wages</a></strong></li>
+<li><strong><a href="https://www.leavenetwork.org/annual-review-reports/country-reports/">International Network on Leave Policies &amp; Research</a></strong>
+<ul>
+<li>Details of policy for four main types of leave - maternity, paternity, parental and care for sick dependents (covering biological and adoptive parents) - and for flexible working (i.e. are parents entitled to work reduced hours or otherwise adapt their work to meet their care needs?)</li>
+</ul></li>
+</ul>
+</div>
+<div id="environmental-politics" class="section level3">
+<h3>Environmental Politics</h3>
+<ul>
+<li><strong><a href="http://kops.uni-konstanz.de/handle/123456789/18536">CONSENSUS: Measuring environmental policy change</a></strong>
+<ul>
+<li>Dataset covering the evolution of clean air policies in 24 advanced democracies over a period of almost three decades (1976-2003)</li>
+</ul></li>
+<li><strong><a href="https://data.worldbank.org/topic/environment">World Bank Environmental Data</a></strong></li>
+<li><strong><a href="https://epi.envirocenter.yale.edu/">Environmental Performance Index (EPI)</a></strong>
+<ul>
+<li>Provides Environmental Performance Index (EPI) that ranks 180 countries on 24 performance indicators across ten issue categories covering environmental health and ecosystem vitality</li>
+</ul></li>
+<li><strong><a href="https://iea.uoregon.edu/">International Environmental Agreements (IEA) Database Project</a></strong>
+<ul>
+<li>Includes over 1,300 MEAs, over 2,200 BEAs, 250 other environmental agreements, and over 90,000 individual country “membership actions” (dates of signature, ratification, or entry into force)</li>
+</ul></li>
+<li><strong><a href="https://www.ecolex.org/">ECOLEX: Archive of environmental legislation</a></strong>
+<ul>
+<li>Search on treaties, legislation, and jurisprudence</li>
+</ul></li>
+<li><strong><a href="http://www.ciesin.org/">Center for International Earth Science Information Network (CIESIN)</a></strong>
+<ul>
+<li>Repository of various environmental datasets</li>
+</ul></li>
+<li><strong><a href="https://www.strausscenter.org/ccaps/">Climate Change and African Political Stability (CCAPS)</a></strong>
+<ul>
+<li>Analyzes how climate change could impact African and international security. Also provides various data collections such as the Social Conflict in Africa Database (SCAD) (event-level data on riots, coups, strikes, and other instances of social unrest) and the Armed Conflict Location and Event Dataset (ACLED) (event-level data on various types of armed conflict)</li>
+</ul></li>
+</ul>
+</div>
+<div id="health" class="section level3">
+<h3>Health</h3>
+<ul>
+<li><strong><a href="http://ghdx.healthdata.org/">Global Health Data Exchange (GHDx)</a></strong>
+<ul>
+<li>Provides a comprehensive catalog of surveys, censuses, vital statistics, and other health-related data</li>
+</ul></li>
+<li><strong><a href="https://www.kff.org/statedata/">Kaiser Family Foundation</a></strong>
+<ul>
+<li>Variety of health related indicators, as well as demographic and economic indicators, at the state level.</li>
+</ul></li>
+</ul>
+</div>
+<div id="gun-laws-and-gun-violence" class="section level3">
+<h3>Gun Laws and Gun Violence</h3>
+<ul>
+<li><strong><a href="https://lawcenter.giffords.org/facts/gun-violence-statistics/">Giffords Law Center to Prevent Gun Violence. Lots of statistics related to gun violence</a></strong>
+<ul>
+<li>Provides statistics and fact sheets on gun violence in the U.S. and introduces related laws</li>
+</ul></li>
+<li><strong><a href="https://www.gunstocarry.com/gun-laws-state/#states">Guns to Carry</a></strong>
+<ul>
+<li>Variety of statistics by state on gun laws.</li>
+</ul></li>
+<li><strong><a href="http://worldpopulationreview.com/states/gun-laws-by-state/">World Population Review</a></strong></li>
+<li><strong><a href="http://worldpopulationreview.com/states/murder-rate-by-state/">Downloadable dataset on gun laws by state</a></strong>
+<ul>
+<li>Downloadable dataset on murder rates by state</li>
+</ul></li>
+<li><strong><a href="https://www.ajpmonline.org/article/S0749-3797(19)30197-7/addons">Firearm Ownership and Domestic Versus Nondomestic Homicide in the U.S.</a></strong>
+<ul>
+<li>Article with data on gun ownership and homicides.</li>
+</ul></li>
+<li><strong><a href="https://www.gunviolencearchive.org/reports/mass-shooting">Gun Violence Archive</a></strong>
+<ul>
+<li>Downloadable dataset listing details of mass shootings (shootings where at least 2 people were injured or killed)</li>
+</ul></li>
+</ul>
+</div>
+<div id="country-information" class="section level3">
+<h3>Country Information</h3>
+<ul>
+<li><strong><a href="https://data.oecd.org/">OECD</a></strong>
+<ul>
+<li>Mostly data focused on the member states (36 countries)</li>
+</ul></li>
+<li><strong><a href="https://datacatalog.worldbank.org/">World Bank</a></strong></li>
+<li><strong><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></strong>
+<ul>
+<li>Various topics on a country, including population, currency, major industries, GDP, unemployment, inflation rate, imports/exports</li>
+</ul></li>
+<li><strong><a href="https://guides.libraries.psu.edu/country-information">Penn State Library - Country Information</a></strong>
+<ul>
+<li>Resources to help with country research: background, constitution, economy, politics, statistics and data. Penn State verification required</li>
+</ul></li>
+<li><strong><a href="https://guides.libraries.psu.edu/international-relations/statistics">Penn State Library - International Relations</a></strong>
+<ul>
+<li>A guide to resources for researching international relations. Mostly lists data from International Organizations such as IMF, UN, World Bank, etc. Penn State verification required</li>
+</ul></li>
+<li><strong><a href="https://epub-prsgroup-com.ezaccess.libraries.psu.edu/customer/countrydata/">Country Data Online</a></strong>
+<ul>
+<li>Political, economic, financial, and social data for over 140 countries</li>
+</ul></li>
+<li><strong><a href="https://www.china-data-online.com/">China Data Online</a></strong>
+<ul>
+<li>Information on China’s economic development at national, provincial, city, county, and industrial levels. Registration and log-in required. Penn state subscribes the data so you can use your Penn state ID to access the data</li>
+</ul></li>
+<li><strong><a href="https://ec.europa.eu/info/departments/eurostat-european-statistics_en">Eurostat</a></strong>
+<ul>
+<li>Provides statistics for the European Union</li>
+</ul></li>
+<li><strong><a href="https://www.library.auckland.ac.nz/about-us/collections/decommissioned-databases">OffSats</a></strong>
+<ul>
+<li>Accumulated links to official statistical sites from governments around the world</li>
+</ul></li>
+<li><strong><a href="https://ncgg.princeton.edu/wep/dataverse.html">World Economics and Politics Dataverse</a></strong>
+<ul>
+<li>The database includes over 900 variables, covering politics, economics, geography, social and cultural</li>
+</ul></li>
+<li><strong><a href="https://www.rug.nl/ggdc/productivity/pwt/">Penn World Table</a></strong>
+<ul>
+<li>Information on relative levels of income, output, input and productivity, covering 182 countries between 1950 and 2017</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="us-data" class="section level2">
+<h2>US Data</h2>
+<div id="elections-data" class="section level3">
+<h3>Elections Data</h3>
+<ul>
+<li><strong><a href="http://www.electionstudies.org/">The American National Elections Studies (ANES)</a></strong>
+<ul>
+<li>Surveys on voting, public opinion, and political participation in the U.S since 1948</li>
+</ul></li>
+<li><strong><a href="https://cces.gov.harvard.edu/pages/welcome-cooperative-congressional-election-study">CCES (Cooperative Congressional Election Study)</a></strong>
+<ul>
+<li>Survey administered by YouGov, consists of (1) pre-election wave which asks about general political attitudes, various demographic factors, assessment of roll call voting choices, political information, and vote intentions and (2) post-election wave which asks questions about the election just occurred</li>
+</ul></li>
+<li><strong><a href="https://www.annenbergpublicpolicycenter.org/political-communication/naes/">NAES (National Annenberg Election Survey)</a></strong>
+<ul>
+<li>Surveys on political attitudes about candidates, issues and the traits Americans want in a president during the presidential election years 2000, 2004, and 2008 in the U.S.</li>
+</ul></li>
+<li><strong><a href="https://guides.libraries.psu.edu/voting-elections">Penn State Library - Voting and Election</a></strong>
+<ul>
+<li>A guide to resources for voting and elections research. Penn State verification required</li>
+</ul></li>
+<li><strong><a href="https://library-cqpress-com.ezaccess.libraries.psu.edu/elections/">CQ Voting and Elections Collection</a></strong>
+<ul>
+<li>Provides reference narratives and documents on elections, parties, voter behavior, and campaigns. Also allows extracting election results by meaningful characteristics: candidate, office, locality, and race type over time</li>
+</ul></li>
+<li><strong><a href="http://poll.orspub.com.ezaccess.libraries.psu.edu/">Polling the Nations</a></strong>
+<ul>
+<li>Provides statistics (frequencies rates) from questions in public opinion polls from the United States and 100 countries since 1986</li>
+</ul></li>
+<li><strong><a href="https://www.presidency.ucsb.edu/statistics">The American Presidency Project</a></strong>
+<ul>
+<li>Data on the American presidency including presidential relations with congress, presidential approval, public appearances, growth of the executive branch, presidential addresses, and presidential selection</li>
+</ul></li>
+<li><strong><a href="http://www.pollingreport.com/">Polling report</a></strong>
+<ul>
+<li>American public opinion on various issues including elections</li>
+</ul></li>
+</ul>
+</div>
+<div id="us-congress" class="section level3">
+<h3>US Congress</h3>
+<ul>
+<li><strong><a href="http://web.mit.edu/17.251/www/data_page.html">Charles Stewart’s Congressional Data</a></strong>
+<ul>
+<li>Provides links to the data on the study of Congress, including Congressional Committees (by Garrison Nelson), Candidate Qualities (by David Lublin), Candidate Positioning (by Stephen Ansolabehere, James M. Snyder, and CharlesStewart III), etc.</li>
+</ul></li>
+<li><strong><a href="http://congressionalbills.org/download.html">Congressional Bill Project</a></strong> ** A relational database of over 400,000 public and private bills introduced in the U.S. House and Senate since 1947. It provides information about a bill’s title or short description, primary topic, progress, and sponsor.</li>
+<li><strong><a href="https://www.voteview.com/">DW-Nominate and Roll Call Data</a></strong>
+<ul>
+<li>Keith Poole’s site containing congressional roll calls, as well as ideology estimates of members of congress</li>
+</ul></li>
+<li><strong><a href="https://library-cqpress-com.ezaccess.libraries.psu.edu/congress/">CQ Congress Collections</a></strong>
+<ul>
+<li>Data on legislation, members, and the history and powers of the U.S. Congress</li>
+</ul></li>
+<li><strong><a href="https://www.rankedchoicevoting.org/data_clearinghouse">Ranked Choice Voting Resource Center RCV Data</a></strong>
+<ul>
+<li>Databases of ranked-choice voting ballot data from every RCV election held in the United States with publicly available data since the early 2000s and links to tabulation tools developed to run variations of ranked-choice voting</li>
+</ul></li>
+<li><strong><a href="https://data.stanford.edu/dime">Database on Ideology, Money in Politics, and Elections (DIME)</a></strong>
+<ul>
+<li>A general resource for the study of campaign finance and ideology in American politics. Provides data on contribution records, candidate characteristics, and election outcomes from various sources</li>
+</ul></li>
+<li><strong><a href="https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/35309">Washington Representatives Directory Study</a></strong>
+<ul>
+<li>Includes information about thousands of organizations involved in Washington D.C. politics, their organizational characteristics including the kinds of interests they represented and the nature of their membership</li>
+</ul></li>
+</ul>
+</div>
+<div id="us-state-politics-and-public-policy" class="section level3">
+<h3>US State Politics and Public Policy</h3>
+<ul>
+<li><strong><a href="http://ippsr.msu.edu/public-policy/correlates-state-policy">Correlates of State Policy Dataset</a></strong>
+<ul>
+<li>Collects the data relevant to U.S. state policy research, tracking policy differences across and change over time in the 50 states</li>
+</ul></li>
+<li><strong><a href="https://www.klarnerpolitics.org/datasets-1">Carl Klarner’s State Politics Data</a></strong>
+<ul>
+<li>Provides a collection of data on state legislative election returns, state economic data, information about the partisan composition of state legislators, and data on governors</li>
+</ul></li>
+</ul>
+</div>
+<div id="us-courts" class="section level3">
+<h3>US Courts</h3>
+<ul>
+<li><strong><a href="http://scdb.wustl.edu/">The U.S. Supreme Court Database</a></strong>
+<ul>
+<li>Contains over two hundred pieces of information about each case decided by the Court between the 1791 and 2018 terms</li>
+</ul></li>
+<li><strong><a href="http://artsandsciences.sc.edu/poli/juri/">Judicial Research Initiative</a></strong> A repository for data on judicial politics. It includes databases on decisions of the U.S. Courts of Appeals, as well as a database of decisions made by high courts in other countries</li>
+<li><strong><a href="http://comparativeconstitutionsproject.org/">Comparative Constitutions Project</a></strong>
+<ul>
+<li>Contains data on formal features of national constitutions since 1789, including thousands of constitutional texts</li>
+</ul></li>
+</ul>
+</div>
+<div id="general-public-opinion-in-the-us" class="section level3">
+<h3>General Public Opinion in the US</h3>
+<ul>
+<li><strong><a href="http://www.pewresearch.org/data/">Pew</a></strong>
+<ul>
+<li>Surveys on public opinion towards various topics ranging from American Politics to Global Attitudes &amp; Trends.</li>
+</ul></li>
+<li><strong><a href="http://gss.norc.org/Get-The-Data">General Social Survey</a></strong>
+<ul>
+<li>Surveys on American behaviors, demographics, and opinions. Topics include Gender &amp; Marriage, Civil Liberties, Political beliefs and voting, Quality of working life, Religion &amp; Spirituality, and Current Affairs</li>
+</ul></li>
+<li><strong><a href="https://ropercenter.cornell.edu//">Roper Center</a></strong>
+<ul>
+<li>Surveys on public opinion towards various topics such as Abortion, Cold War, Congressional Elections, Defense Spending, Guns, Health, Immigration, etc. Roper iPoll requires a subscription (PSU has one and you may need to be on campus to access it)</li>
+</ul></li>
+</ul>
+</div>
+<div id="us-news-polls" class="section level3">
+<h3>US News Polls</h3>
+<ul>
+<li><strong><a href="http://abcnews.go.com/sections/us/PollVault/PollVault.html">ABC News</a></strong></li>
+<li><strong><a href="http://www.cbsnews.com/sections/opinion/polls/main500160.shtml">CBS News</a></strong></li>
+<li><strong><a href="http://www.latimes.com/news/custom/timespoll/">Los Angeles Times</a></strong></li>
+</ul>
+</div>
+<div id="us-demographiccompendium-data" class="section level3">
+<h3>US Demographic/Compendium Data</h3>
+<ul>
+<li><strong><a href="https://guides.libraries.psu.edu/labor_statistics">Penn State Library - Labor Statistics</a></strong>
+<ul>
+<li>A guide to help researchers find numbers and data related to topics in labor studies. Penn State verification required</li>
+</ul></li>
+<li><strong><a href="https://usa.ipums.org/usa/">IPUMS-USA</a></strong>
+<ul>
+<li>U.S. census microdata; Data includes decennial censuses from 1790 to 2010 and American Community Surveys (ACS) from 2000 to the present</li>
+</ul></li>
+<li><strong><a href="https://healthsurveys.ipums.org/">IPUMS-Health</a></strong>
+<ul>
+<li>Individual-level survey data from two leading sources of self-reported health and health care access information: the National Health Interview Survey (NHIS) and the Medical Expenditure Panel Survey (MEPS)</li>
+</ul></li>
+<li><strong><a href="https://highered.ipums.org/highered/">IPUMS-Highered</a></strong>
+<ul>
+<li>Surveys on the science and engineering (STEM) workforce in the United States</li>
+</ul></li>
+<li><strong><a href="https://statabs-proquest-com.ezaccess.libraries.psu.edu/sa/index.html">Statistical Abstract of the United States</a></strong>
+<ul>
+<li>Key statistics for the U.S. across a broad array of subject</li>
+</ul></li>
+<li><strong><a href="https://hsus-cambridge-org.ezaccess.libraries.psu.edu/HSUSWeb/HSUSEntryServlet">Historical Statistics of the United States</a></strong>
+<ul>
+<li>Various spect of the history of the United States from demographics to voting patterns</li>
+</ul></li>
+<li><strong><a href="http://sk.sagepub.com.ezaccess.libraries.psu.edu/Search/SavedSearch/280">Vital Statistics on American Politics</a></strong>
+<ul>
+<li>Tables on various subjects such as US elections and political parties, public opinion and voting, the media, the three branches of U.S. government, foreign, military, social and economic policy</li>
+</ul></li>
+<li><strong><a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml">American FactFinder</a></strong>
+<ul>
+<li>Social and Demographic statistics taken from Census Bureau surveys</li>
+</ul></li>
+<li><strong><a href="https://www.kff.org/polling/">Kaiser Family Foundation - polls on public health and health</a></strong>
+<ul>
+<li>Surveys on the public’s opinions, knowledge, and experiences with the health care system</li>
+</ul></li>
+</ul>
+</div>
+<div id="us-government-data" class="section level3">
+<h3>US Government Data</h3>
+<ul>
+<li><strong><a href="https://www.data.gov/">The U.S. Government’s open data</a></strong>
+<ul>
+<li>Various topics such as Agriculture, Climate, Consumer, Finance, Health, Local Government, Public Safety, etc.</li>
+</ul></li>
+<li><strong><a href="https://www.usa.gov/statistics">Federal Portal to U.S. Data and Statistics</a></strong>
+<ul>
+<li>Provides Data and Statistics from the U.S. Government</li>
+</ul></li>
+<li><strong><a href="https://www.census.gov/">Census Bureau website</a></strong></li>
+<li><strong><a href="https://wwwn.cdc.gov/nchs/nhanes/Search/default.aspx">CDC/US National Health and Nutrition Examination Study</a></strong>
+<ul>
+<li>Surveys on Health and Nutrition</li>
+</ul></li>
+</ul>
+</div>
+<div id="other-data-from-us-sources" class="section level3">
+<h3>Other Data from US Sources</h3>
+<ul>
+<li><strong><a href="https://data.fivethirtyeight.com/">FiveThirtyEight</a></strong>
+<ul>
+<li>Various topics from political issues (polls, endorsement, candidate emails, etc) to sports (NFL, MLB, NBA predictions)</li>
+</ul></li>
+<li><strong><a href="https://github.com/dblackrun">NBA Player tracking data</a></strong>
+<ul>
+<li><a href="http://rstudio-pubs-static.s3.amazonaws.com/11288_111663babc4f44359a35b1f5f1a22b89.html">Another resource</a></li>
+</ul></li>
+<li><strong><a href="https://blog.revolutionanalytics.com/2013/04/lahman-a-new-r-package-for-baseball-stats.html">Baseball Statistics (MLB)</a></strong></li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
