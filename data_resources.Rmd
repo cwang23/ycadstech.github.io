@@ -325,7 +325,7 @@ output:
 * **[Charles Stewart’s Congressional Data](http://web.mit.edu/17.251/www/data_page.html)**
   * Provides links to the data on the study of Congress, including Congressional Committees (by Garrison Nelson), Candidate Qualities (by David Lublin), Candidate Positioning (by Stephen Ansolabehere, James M. Snyder, and CharlesStewart III), etc.
 * **[Congressional Bill Project](http://congressionalbills.org/download.html)**
-  ** A relational database of over 400,000 public and private bills introduced in the U.S. House and Senate since 1947. It provides information about a bill’s title or short description, primary topic, progress, and sponsor.
+  * A relational database of over 400,000 public and private bills introduced in the U.S. House and Senate since 1947. It provides information about a bill’s title or short description, primary topic, progress, and sponsor.
 * **[DW-Nominate and Roll Call Data](https://www.voteview.com/)**
   * Keith Poole’s site containing congressional roll calls, as well as ideology estimates of members of congress
 * **[CQ Congress Collections](https://library-cqpress-com.ezaccess.libraries.psu.edu/congress/)**
