@@ -20,7 +20,7 @@ output:
   * Website with resources for using the tidyverse, one of the most popular collections of R packages 
 * **["R Packages"](http://r-pkgs.had.co.nz/)**
   * A guide to building a R package
-* **["Ten Steps to Becoming a Tidyverse Contributor](https://thisisnic.github.io/2018/11/28/ten-steps-to-becoming-a-tidyverse-contributor/)**
+* **["Ten Steps to Becoming a Tidyverse Contributor"](https://thisisnic.github.io/2018/11/28/ten-steps-to-becoming-a-tidyverse-contributor/)**
   * A guide to contributing to R open source packages
 * **["Creating websites in R"](https://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html#types_of_websites)**
   * A quick guide to making a website using RMarkdown
