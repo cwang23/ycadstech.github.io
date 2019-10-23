@@ -6,6 +6,8 @@ output:
     toc_float: true
 ---
 
+<br>
+
 ## R
 
 * **["R for Data Science"](https://r4ds.had.co.nz/)**
@@ -15,20 +17,28 @@ output:
 * **["The tidyverse style guide"](https://style.tidyverse.org/)**
   * A style guide for writing R code (requires a VPN to access in mainland China)
 * **["Tidyverse"](https://www.tidyverse.org/)**
-  * Website with resources for using the tidyverse, one of the most popular collections of R packages  
+  * Website with resources for using the tidyverse, one of the most popular collections of R packages 
+* **["R Packages"](http://r-pkgs.had.co.nz/)**
+  * A guide to building a R package
+* **["Ten Steps to Becoming a Tidyverse Contributor](https://thisisnic.github.io/2018/11/28/ten-steps-to-becoming-a-tidyverse-contributor/)**
+  * A guide to contributing to R open source packages
 
+
+<br><br>
 
 ## Python
 
 * **["Dartmouth College CS 1 Curriculum"](https://www.cs.dartmouth.edu/~cs1/)**
   * Website for Dartmouth College's Computer Science 1 course
 
+<br><br>
 
 ## SQL
 
 * **["SQL Murder Mystery"](http://mystery.knightlab.com/)**
   * An interactive website for learning SQL
 
+<br><br>
 
 ## Git and GitHub
 
@@ -37,10 +47,10 @@ output:
 * **["GitHub Learning Lab"](https://lab.github.com/)**
   * Interactive tool from GitHub for learning Git
 
+<br><br>
 
 ## Machine Learning
 
 * **["The Elements of Statistical Learning"](https://web.stanford.edu/~hastie/ElemStatLearn/)**
   * A free online textbook for statistical learning
-  
   

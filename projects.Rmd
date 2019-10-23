@@ -1,0 +1,7 @@
+---
+title: "Projects"
+---
+
+*Projects that club members are working on can be found on this page*
+
+The GitHub repo for the YCA DS & Tech club can be found **[here](https://github.com/cwang23/ycadstech.github.io)**!
