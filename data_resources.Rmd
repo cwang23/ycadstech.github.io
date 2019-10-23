@@ -13,6 +13,24 @@ output:
 
 * **[Harvard Dataverse](https://dataverse.harvard.edu)**
 * **[ICPSR](https://www.icpsr.umich.edu)**
+* **[Google Dataset Search](https://toolbox.google.com/datasetsearch)**
+
+## Various Political Science Datasets
+
+* **[Paul Hensel’s International Relations Data Site](https://www.paulhensel.org/data.html)**
+  * Data sets on international conflict, economy, environment, politics, and social subjects
+* **[Eric Gahner Larsen’s “Dataset with Political Datasets” page](https://github.com/erikgahner/PolData)**
+  * Provides an overall collection of political datasets within specific categories: cabinets, citizens, constitutions, political institutions, parties and politicians, democracy, economics, elections, international relations, media, policy, political elites
+* **[Poli Sci Data](http://www.poliscidata.com/)**
+* **[Database of Database](https://laurenkperez.com/database-of-databases-1)**
+  * Sources that be useful for research in the social sciences, broadly conceived
+* **[Data is Plural](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0)**
+ * **[Jamie Monogan Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ARKOTI)**
+  * Data on both U.S. (roll calls, NES, Drug Policy News Coverage, Energy Policy News Coverage, Health Lobbying, National Supported Work Demonstration, National Survey of High School Biology Teachers) and International (Comparative Study of Electoral Systems, Democratization and Border Settlements, Japanese Electrical Consumption, Militarized International Disputes, Political Terror Scale on Human Rights)
+* **[Hercules Interdisciplinary Database](https://ghum.kuleuven.be/ggs/research/HerculesDB)**
+  * Contains information from different disciplines, including economics, law, and political sciences
+* **[Michelle Dion’s research bookmarks](https://bkmrk.michelledion.com/)**
+  * Contains links to over 600 data sources
 
 
 ## Comparative Politics/International Relations
@@ -45,27 +63,222 @@ output:
 
 ### Parliament, Governments, and the Electoral System
 
-    • Parlgov
-        ◦ http://www.parlgov.org/
-        ◦ Parties, Elections, and Cabinet data for all EU and most OECD democracies (37 countries)
-    • Who Governs EU
-        ◦ https://whogoverns.eu/about/
-        ◦ Cabinet composition and party system development in 48 European democratic states
-    • Party Government Data Set (PGDS)
-        ◦ https://fsw.vu.nl/en/departments/political-science-and-public-administration/staff/woldendorp/party-government-data-set/index.aspx
-        ◦ Covers 39 parliamentary democracies from 1945, or the year these countries became a parliamentary democracy (again)., through 2008
-    • Comparative Studies of Electoral Systems (CSES)
-        ◦ https://cses.org
-        ◦ The impact of electoral institutions on political behavior, representation and accountability, variety and quality of political choice in an election, distributional politics and social protection, and citizen’s perception on political elites and out-groups
-    • Comparative Political Data Set (CPDS)
-        ◦ http://www.cpds-data.org/index.php/data
-        ◦ A collection of political and institutional country-level data
-    • Veto Player Data
-        ◦ https://sites.lsa.umich.edu/tsebelis/data/veto-players-data/
-        ◦ Data about the composition of governments of different advanced industrialized countries
-    • Domestic Electoral Systems Around the World
-        ◦ http://mattgolder.com/elections
-        ◦ Data on electoral systems that cover all of the legislative and presidential elections that have taken place in democratic states from 1946 through 2016
+* **[Parlgov](http://www.parlgov.org/)**
+  * Parties, Elections, and Cabinet data for all EU and most OECD democracies (37 countries)
+* **[Who Governs EU](https://whogoverns.eu/about/)**
+  * Cabinet composition and party system development in 48 European democratic states
+* **[Party Government Data Set (PGDS)](https://fsw.vu.nl/en/departments/political-science-and-public-administration/staff/woldendorp/party-government-data-set/index.aspx)**
+  * Covers 39 parliamentary democracies from 1945, or the year these countries became a parliamentary democracy (again)., through 2008
+* **[Comparative Studies of Electoral Systems (CSES)](https://cses.org)**
+  * The impact of electoral institutions on political behavior, representation and accountability, variety and quality of political choice in an election, distributional politics and social protection, and citizen’s perception on political elites and out-groups
+* **[Comparative Political Data Set (CPDS)](http://www.cpds-data.org/index.php/data)**
+  * A collection of political and institutional country-level data
+* **[Veto Player Data](https://sites.lsa.umich.edu/tsebelis/data/veto-players-data/)**
+  * Data about the composition of governments of different advanced industrialized countries
+* **[Domestic Electoral Systems Around the World](http://mattgolder.com/elections)**
+  * Data on electoral systems that cover all of the legislative and presidential elections that have taken place in democratic states from 1946 through 2016
+  
+ 
+### Elections, Party, and Policy
+
+* **[Constituency-Level Elections Archive (CLEA)](http://www.electiondataarchive.org/data-and-documentation.php)**
+  * Includes around 1,900 elections from 168 countries and territories
+* **[European Elections Database (EED)](http://www.nsd.uib.no/european_election_database/)**
+  * Publishes regional election results for 35 European countries since 1990
+* **[National Elections Across Democracy and Autocracy (NELDA)](https://nelda.co/)**
+  * Provides detailed information on all election events from 1945-2012
+* **[Comparative Agenda Project](https://www.comparativeagendas.net)**
+  * Collects and organizes data from archived sources to track policy outcomes across countries
+* **[Manifesto Project](https://manifesto-project.wzb.eu/)**
+  * Provides parties’ policy positions derived from a content analysis of parties’ electoral manifestos
+* **[Party Facts](https://partyfacts.herokuapp.com/)**
+  * Datasets on political parties and provides an online platform about parties and their history as recorded in social science datasets
+* **[Integrated Party Organization Dataset (IPOD)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PE8TWP)**
+  * This dataset combines several existing datasets containing data on party organization, party performance, party positions and electoral systems into a single data source
+* **[The Political Documents Archive (PoliDoc)](http://www.polidoc.net/)**
+  * Contains election manifestos, coalition agreements, government declarations and various other documents of political actors from developed democracies
+* **[Policy Agendas Project](https://www.comparativeagendas.net)**
+  * Collects and organizes data from archived sources to track policy outcomes across countries
+* **[Executive Approval Project (EAP)](http://www.executiveapproval.org/)**
+  * Measure and analyze public support for political executives
+* **[Global Leadership Project (GLP)](http://glp.la.utexas.edu/about-us)**
+  * Data on government leaders throughout the world - including legislators, members of the executive branch, members of the judiciary, and other decisionmakers whose power may be formal or informal. Only replication data is available for now
+
+
+### Democracy and Autocracy
+
+* **[Freedom House](https://freedomhouse.org/content/freedom-world-data-and-resources)**
+  * Assessing the condition of political rights and civil liberties around the world. For each country and territory, Freedom in the World analyzes the electoral process, political pluralism and participation, the functioning of the government, freedom of expression and of belief, associational and organizational rights, the rule of law, and personal autonomy and individual rights
+* **[Democracy and Dictatorship](https://sites.google.com/site/joseantoniocheibub/datasets/democracy-and-dictatorship-revisited)**
+  * Classification of political regimes as democracy and dictatorship. Classification of democracies as parliamentary, semi-presidential (mixed) and presidential. Classification of dictatorships as military, civilian and royal
+* **[The Polity Project](http://www.systemicpeace.org/polityproject.html)**
+  * Measures qualities of democratic and autocratic authority in governing institutions
+* **[Autocratic Regime Data](https://sites.psu.edu/dictators/)**
+  * Data set on the regime transition for the 280 autocratic regimes in existence from 1946 to 2010. The data identify how regimes exit power, how much violence occurs during transitions, and whether the regimes that precede and succeed them are autocratic.
+* **[Authoritarian Regime Dataset](https://sites.google.com/site/authoritarianregimedataset/)**
+  * Dataset on authoritarian regimes in the world between 1972-2014
+* **[Quality of Government Data](http://qog.pol.gu.se/data)**
+  * Dataset on the causes, consequences, and nature of Good Governance and the Quality of Government (QoG) - that is, trustworthy, reliable, impartial, uncorrupted and competent government institutions
+* **[Varieties of Democracy (V-Dem)](https://www.v-dem.net/en/)**
+  * This dataset measures electoral, liberal, participatory, deliberative, egalitarian, majoritarian and consensual levels of democracy
+* **[Political Risk Service (PRS) Group Data](https://guides.libraries.emory.edu/main/Data_Services/PRS-Data)**
+  * Produces various data products that measure the level of “risk” to international business operations present in different countries across the globe
+
+
+### Conflict and Terrorism
+
+* **[Uppsala Conflict Data](http://www.pcr.uu.se/research/UCDP/)**
+* **[Threat and imposition of sanctions](http://www.unc.edu/~bapat/TIES.htm)**
+* **[Correlates of War (COW)](http://www.correlatesofwar.org/)**
+* **[Armed Conflict Database](https://acd-iiss-org.ezaccess.libraries.psu.edu/member/default.aspx)**
+  * Provides timelines and reports on conflicts worldwide. You may need to access through university ID
+* **[Armed Conflict Location and Event Data (ACLED)](https://www.acleddata.com/)**
+  * Records the dates, actors, types of violence, locations, and fatalities of all reported political violence and protest events across Africa, South Asia, Southeast Asia, the Middle East, Europe, and Latin America
+* **[Integrated Network for Societal Conflict Research (INSCR)](http://www.systemicpeace.org/inscrdata.html)**
+  * Provides Armed Conflict and Intervention (ACI) Datasets, Polity IV, State Fragility Index and Matrix, and Conflict in India Datasets
+* **[Global Terrorism Database (GTD)](https://www.start.umd.edu/gtd/)**
+  * Provides information on terrorist events around the world from 1970 through 2017
+* **[National Consortium for the Study of Terrorism and Responses to Terrorism (START)](https://www.start.umd.edu/data-and-tools/start-datasets)**
+  * Data collections on topics such as individual terrorist events, the organizational behavior of ethnic groups in the Middle East and North Africa, profiles of individual perpetrators of terrorist events in the United States, public opinion in Muslim-majority countries, and profiles of individual terrorist organizations. GTD is a commonly used data source by START.
+* **[UCDP/PRIO Armed Conflict Dataset](https://www.prio.org/Data/Armed-Conflict/)**
+  * Provides a dataset of armed conflicts, both internal and external, in the period 1946 to the present
+* **[SIPRI dataset](https://www.sipri.org/databases)**
+  * Dataset on global security, including Arms Transfer, Arms Industry, Military Expenditure, etc.
+* **[GDELF](https://www.gdeltproject.org/)**
+  * Event data compiled from news reports. Includes protest and terrorism data among other things. Be aware of the size of the dataset; the full download is 100GB
+* **[Computational Event Data System](http://eventdata.parusanalytics.com/index.html)**
+  * Uses automated coding of English-language news reports to generate political event data focusing on the Middle East, Balkans, and West Africa
+* **[XSub](http://cross-sub.org/)**
+  * Cross-national data on sub-national violence; provides subnational event data on armed conflict and contention around the world
+* **[Cline Center Historical Phoenix Event Data](https://databank.illinois.edu/datasets/IDB-0647142)**
+  * Covers the period 1945-2018 and includes several million events extracted from 17.5 million news stories. It documents the agents, locations, and issues at stake in a wide variety of conflict, cooperation, and communicative events
+* **[Minority at Risk (MAR)](http://www.cidcm.umd.edu/mar/)**
+  * Monitors and analyzes the status and conflicts of politically-active communal groups in all countries with a current population of at least 500,000
+  
+  
+### Migration
+
+* **US Census Bureau on Foreign Born Population & Migration/Geographic Mobility**
+  * [Foreign born population](https://www.census.gov/topics/population/foreign-born.html)
+  * [Migration/Geographic Mobility](https://www.census.gov/topics/population/migration.html)
+* **[California Demographic Reports - Immigration and Migration](http://www.dof.ca.gov/Reports/Demographic_Reports/index.html#migration)**
+  * Includes data on migration (which describes movements within the same country or state) and immigration (which describes movements between countries)
+* **[Migration Policy Institute](https://www.migrationpolicy.org/programs/migration-data-hub?qt-data_hub_tabs=1#datahub-tabs)**
+  * Provides international migration statistics and global remittance as well as U.S. immigration statistics (state level) and DACA related data
+* **[The IMPIC Project](http://www.impic-project.eu/)**
+  * Provides quantitative indices to measure immigration policies in all OECD countries and for the period 1980-2010
+* **[Migration Data Portal](https://migrationdataportal.org/?i=stock_abs_&t=2019)**
+  * Provides various migration-related topics such as migrant stocks, gender and migration, human trafficking, smuggling, etc
+* **[Migration Remittance data - World Bank](https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues/brief/migration-remittances-data)**
+  * Provides a snapshot of migration and remittances for all countries, regions and income groups of the world, annual remittances data, bilateral migration matrix, and some downloadable datasets
+* **[Migration indicators - OECD](https://www.oecd-ilibrary.org/social-issues-migration-health/migration/indicator-group/english_443b6567-en)**
+  * Inflows of foreign population by nationality
+* **[Immigration and Ethnocultural Diversity in Canada](https://www150.statcan.gc.ca/n1/en/subjects/immigration_and_ethnocultural_diversity)**
+* **[Department of Homeland Security on Immigration data & statistics](https://www.dhs.gov/immigration-statistics)**
+  * Official government data on immigrants & non-immigrants admission, refugees & Asylees, Border security, and etc.
+* **[UNHCR data on Refugee](https://data2.unhcr.org/en/situations)**
+  * Data on the current emergencies and other protracted refugee crises
+* **[UN data on Migration](https://www.un.org/en/development/desa/population/migration/data/index.asp)**
+  * Particularly on international migration flow and stock
+* **[Citizenship rights of immigrants](https://www.wzb.eu/en/node/350/subpage/12393)**
+  * Classifies policies as more or less restrictive in terms of the extent and accessibility of rights for immigrants
+  
+
+### Trade and Economy
+
+* **[IMF Macroeconomic and Financial Data](http://data.imf.org/)**
+  * Contains various topics related to economic & financial data such as investment flows, monetary aggregates, economic output, commodity prices, exchange rates, public finances, financial institutions and markets, and both public and private debt
+* **[OECD iLibrary (Organization for Economic Cooperation and Development)](http://www.oecd-ilibrary.org/)**
+  * Covers topics such as agricultural policies, environmental indicators, social expenditures, labour markets, national accounts, foreign trade and FDI, and various industry-level data
+* **[United Nations Commodity Statistics Trade Database (Comtrade)](https://comtrade.un.org/)**
+  * Especially useful for commodity-specific bilateral trade data
+* **[UNCTADStat](http://unctadstat.unctad.org/EN/)**
+  * Useful in investigating FDI statistics, including flows, stocks, and participation in international investment-related agreements
+* **[World Development Indicators (World Bank)](https://datacatalog.worldbank.org/dataset/world-development-indicators)**
+  * A compilation of relevant, high-quality, and internationally comparable statistics about global development and the fight against poverty.
+* **[World Integrated Trade Solution (WITS)](http://wits.worldbank.org/WITS/)**
+  * Provides access to international merchandise trade, tariff and non-tariff measures (NTM) data
+  
+
+### Welfare State/Social Policies
+
+* **[The Social Policy Indicators (SPIN) database](https://www.sofi.su.se/spin/)**
+  * Comparative data on social rights and duties of citizens, covering 34 countries, of which several have data on core social policy programs from 1930 to 2013
+* **[The Comparative Welfare Entitlements Dataset (CWED)](http://cwed2.org/)**
+  * Contains information about the structure and generosity of social insurance benefits in 33 countries around the world
+* **[The CSB Minimum Income Protection Indicators database](http://www.centrumvoorsociaalbeleid.be/index.php?q=node/3270)**
+  * Data on minimum income protection provisions in Europe and the United States
+* **[Unemployment Benefit Conditionality Dataset](https://benefitconditionality.weebly.com/)**
+  * Provides information on the strictness of job-availability and job-search requirements as well as benefit sanction rules in 21 advanced democracies in Europe, North America, and Australiasia and their changes between 1980 and 2012
+* **[The comparative Welfare States & Social Policy in Latin America Datasets](http://huberandstephens.web.unc.edu/common-works/data/)**
+* **[OECD Benefits & Wages](https://www.oecd.org/social/benefits-and-wages/)**
+* **[International Network on Leave Policies & Research](https://www.leavenetwork.org/annual-review-reports/country-reports/)**
+  * Details of policy for four main types of leave - maternity, paternity, parental and care for sick dependents (covering biological and adoptive parents) - and for flexible working (i.e. are parents entitled to work reduced hours or otherwise adapt their work to meet their care needs?)
+  
+           
+### Environmental Politics
+
+* **[CONSENSUS: Measuring environmental policy change](http://kops.uni-konstanz.de/handle/123456789/18536)**
+  * Dataset covering the evolution of clean air policies in 24 advanced democracies over a period of almost three decades (1976-2003)
+* **[World Bank Environmental Data](https://data.worldbank.org/topic/environment)**
+* **[Environmental Performance Index (EPI)](https://epi.envirocenter.yale.edu/)**
+  * Provides Environmental Performance Index (EPI) that ranks 180 countries on 24 performance indicators across ten issue categories covering environmental health and ecosystem vitality
+* **[International Environmental Agreements (IEA) Database Project](https://iea.uoregon.edu/)**
+  * Includes over 1,300 MEAs, over 2,200 BEAs, 250 other environmental agreements, and over 90,000 individual country “membership actions” (dates of signature, ratification, or entry into force)
+* **[ECOLEX: Archive of environmental legislation](https://www.ecolex.org/)**
+  * Search on treaties, legislation, and jurisprudence
+* **[Center for International Earth Science Information Network (CIESIN)](http://www.ciesin.org/)**
+  * Repository of various environmental datasets
+* **[Climate Change and African Political Stability (CCAPS)](https://www.strausscenter.org/ccaps/)**
+  * Analyzes how climate change could impact African and international security. Also provides various data collections such as the Social Conflict in Africa Database (SCAD) (event-level data on riots, coups, strikes, and other instances of social unrest) and the Armed Conflict Location and Event Dataset (ACLED) (event-level data on various types of armed conflict)
+
+
+### Health
+
+* **[Global Health Data Exchange (GHDx)](http://ghdx.healthdata.org/)**
+  * Provides a comprehensive catalog of surveys, censuses, vital statistics, and other health-related data
+* **[Kaiser Family Foundation](https://www.kff.org/statedata/)**
+  * Variety of health related indicators, as well as demographic and economic indicators, at the state level.
+  
+
+### Gun Laws and Gun Violence
+
+* **[Giffords Law Center to Prevent Gun Violence. Lots of statistics related to gun violence](https://lawcenter.giffords.org/facts/gun-violence-statistics/)**
+  * Provides statistics and fact sheets on gun violence in the U.S. and introduces related laws
+* **[Guns to Carry](https://www.gunstocarry.com/gun-laws-state/#states)**
+  * Variety of statistics by state on gun laws.
+* **[World Population Review](http://worldpopulationreview.com/states/gun-laws-by-state/)**
+* **[Downloadable dataset on gun laws by state](http://worldpopulationreview.com/states/murder-rate-by-state/)**
+  * Downloadable dataset on murder rates by state
+* **[Firearm Ownership and Domestic Versus Nondomestic Homicide in the U.S.](https://www.ajpmonline.org/article/S0749-3797(19)30197-7/addons)**
+  * Article with data on gun ownership and homicides.
+* **[Gun Violence Archive](https://www.gunviolencearchive.org/reports/mass-shooting)**
+  * Downloadable dataset listing details of mass shootings (shootings where at least 2 people were injured or killed)
+
+
+### Country Information
+
+* **[OECD](https://data.oecd.org/)**
+  * Mostly data focused on the member states (36 countries)
+* **[World Bank](https://datacatalog.worldbank.org/)**
+* **[CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/)**
+  * Various topics on a country, including population, currency, major industries, GDP, unemployment, inflation rate, imports/exports
+* **[Penn State Library - Country Information](https://guides.libraries.psu.edu/country-information)**
+  * Resources to help with country research: background, constitution, economy, politics, statistics and data. Penn State verification required
+* **[Penn State Library - International Relations](https://guides.libraries.psu.edu/international-relations/statistics)**
+  * A guide to resources for researching international relations. Mostly lists data from International Organizations such as IMF, UN, World Bank, etc. Penn State verification required
+* **[Country Data Online](https://epub-prsgroup-com.ezaccess.libraries.psu.edu/customer/countrydata/)**
+  * Political, economic, financial, and social data for over 140 countries
+* **[China Data Online](https://www.china-data-online.com/)**
+  * Information on China’s economic development at national, provincial, city, county, and industrial levels. Registration and log-in required. Penn state subscribes the data so you can use your Penn state ID to access the data
+* **[Eurostat](https://ec.europa.eu/info/departments/eurostat-european-statistics_en)**
+  * Provides statistics for the European Union
+* **[OffSats](https://www.library.auckland.ac.nz/about-us/collections/decommissioned-databases)**
+  * Accumulated links to official statistical sites from governments around the world
+* **[World Economics and Politics Dataverse](https://ncgg.princeton.edu/wep/dataverse.html)**
+  * The database includes over 900 variables, covering politics, economics, geography, social and cultural
+* **[Penn World Table](https://www.rug.nl/ggdc/productivity/pwt/)**
+  * Information on relative levels of income, output, input and productivity, covering 182 countries between 1950 and 2017
 
 
 ## US Data

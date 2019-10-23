@@ -9,6 +9,8 @@ navbar:
       href: who.html
     - text: "Projects"
       href: projects.html
+    - text: "Data Resources"
+      href: data_resources.html
     - text: "Learning Resources"
       href: resources.html
 output:
