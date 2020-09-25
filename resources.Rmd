@@ -10,6 +10,10 @@ output:
 
 ## R
 
+* **["Learn R 4 Free (resources in English, Spanish, Turkish)"](https://www.learnr4free.com/index.html)**
+  * Page with links to free resources for learning R.
+* **["SICSS Bootcamp"](https://sicss.io/boot_camp)**
+  * Bootcamp for R
 * **["R for Data Science"](https://r4ds.had.co.nz/)**
   * A resource for beginners who are interested in learning both the basics of R and data science.
 * **["Advanced R"](http://adv-r.had.co.nz/Introduction.html)**
@@ -50,8 +54,21 @@ output:
 
 <br><br>
 
-## Machine Learning
+## Machine Learning/Data Science
 
 * **["The Elements of Statistical Learning"](https://web.stanford.edu/~hastie/ElemStatLearn/)**
   * A free online textbook for statistical learning
+* **["Data Science for Economists"](https://raw.githack.com/uo-ec607/lectures/master/08-regression/08-regression.html)**
+  * Data science for economists lecture with links to resources
+* **["Data Science in a Box"](https://datasciencebox.org/)**
+  * Intro data science course
+  
+## Statistics
+
+* **["Open Intro Stats"](https://github.com/OpenIntroStat/ims)**
+  * Free online resources for intro statistics
+* **["Intro to Stats in R"](https://stat150.blog/)**
+  * Introductory statistics using R
+* **["Resampling Methods in R"](https://erbiostat.wixsite.com/bootstrap)**
+  * Bootstrapping and other methods in R
   
