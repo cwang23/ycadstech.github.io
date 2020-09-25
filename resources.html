@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -235,6 +234,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -263,6 +263,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -377,6 +383,14 @@ div.tocify {
 <div id="r" class="section level2">
 <h2>R</h2>
 <ul>
+<li><strong><a href="https://www.learnr4free.com/index.html">“Learn R 4 Free (resources in English, Spanish, Turkish)”</a></strong>
+<ul>
+<li>Page with links to free resources for learning R.</li>
+</ul></li>
+<li><strong><a href="https://sicss.io/boot_camp">“SICSS Bootcamp”</a></strong>
+<ul>
+<li>Bootcamp for R</li>
+</ul></li>
 <li><strong><a href="https://r4ds.had.co.nz/">“R for Data Science”</a></strong>
 <ul>
 <li>A resource for beginners who are interested in learning both the basics of R and data science.</li>
@@ -442,12 +456,37 @@ div.tocify {
 </ul>
 <p><br><br></p>
 </div>
-<div id="machine-learning" class="section level2">
-<h2>Machine Learning</h2>
+<div id="machine-learningdata-science" class="section level2">
+<h2>Machine Learning/Data Science</h2>
 <ul>
 <li><strong><a href="https://web.stanford.edu/~hastie/ElemStatLearn/">“The Elements of Statistical Learning”</a></strong>
 <ul>
 <li>A free online textbook for statistical learning</li>
+</ul></li>
+<li><strong><a href="https://raw.githack.com/uo-ec607/lectures/master/08-regression/08-regression.html">“Data Science for Economists”</a></strong>
+<ul>
+<li>Data science for economists lecture with links to resources</li>
+</ul></li>
+<li><strong><a href="https://datasciencebox.org/">“Data Science in a Box”</a></strong>
+<ul>
+<li>Intro data science course</li>
+</ul></li>
+</ul>
+</div>
+<div id="statistics" class="section level2">
+<h2>Statistics</h2>
+<ul>
+<li><strong><a href="https://github.com/OpenIntroStat/ims">“Open Intro Stats”</a></strong>
+<ul>
+<li>Free online resources for intro statistics</li>
+</ul></li>
+<li><strong><a href="https://stat150.blog/">“Intro to Stats in R”</a></strong>
+<ul>
+<li>Introductory statistics using R</li>
+</ul></li>
+<li><strong><a href="https://erbiostat.wixsite.com/bootstrap">“Resampling Methods in R”</a></strong>
+<ul>
+<li>Bootstrapping and other methods in R</li>
 </ul></li>
 </ul>
 </div>
